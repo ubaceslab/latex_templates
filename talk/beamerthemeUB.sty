@@ -23,12 +23,13 @@
 \definecolor{play2}{RGB}{194,207,202}
 \definecolor{play3}{RGB}{240,240,240}
 
-\usecolortheme[named=ubblue]{structure}
+\usecolortheme[named=ubskyblue]{structure}
 \useinnertheme[shadow]{rounded} 
 
 %\setbeamercolor*{Title bar}{fg=white}
 %\setbeamercolor*{Location bar}{fg=oxygenorange,bg=oxygenlightgray}
 \setbeamercolor*{frametitle}{fg=black}
+\setbeamerfont{frametitle}{series=\bf}
 \setbeamercolor*{block title}{bg=ubskyblue,fg=white}
 \setbeamercolor*{block body}{bg=play3,fg=black}
 %\setbeamerfont{block title}{series=\bf}
@@ -55,15 +56,13 @@
 \usepackage{amssymb}
 
 %\setbeamertemplate{headline}
-%\setbeamertemplate{frametitle}
-%{
-%  \vskip-0.25\beamer@headheight
-%  \vskip-\baselineskip
-%  \vskip-0.2cm
-%  \hskip0.7cm\usebeamerfont*{frametitle}\insertframetitle
-%  \vskip-0.10em
-%  \hskip0.7cm\usebeamerfont*{framesubtitle}\insertframesubtitle
-%}
+\setbeamertemplate{frametitle}
+{
+  \vskip 0.2\beamer@headheight
+  %\vskip-\baselineskip
+  %\vskip-0.2cm
+  \usebeamerfont*{frametitle}\insertframetitle
+}
 
 \setbeamertemplate{headline}
 {
@@ -74,9 +73,6 @@
 
 \vskip -0.4\beamer@headheight
 \hspace{0.1in}\pgfuseimage{ublogo}
-
-\vskip \beamer@headheight
-
 }
 
 \defbeamertemplate*{footline}{infolines theme}
